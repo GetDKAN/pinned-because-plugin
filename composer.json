@@ -1,0 +1,24 @@
+{
+  "name": "getdkan/pinned-because-plugin",
+  "description": "Pin project versions in Composer, based on the lock file, giving a reason.",
+  "type": "composer-plugin",
+  "license": "GPL-2.0-or-later",
+  "require": {
+    "composer-plugin-api": "^2",
+    "php": ">=7.3.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "GetDkan\\PinnedBecause\\": "src/"
+    }
+  },
+  "extra": {
+    "class": "GetDkan\\PinnedBecause\\Plugin"
+  },
+  "config": {
+    "sort-packages": true
+  },
+  "require-dev": {
+    "composer/composer": "^2@stable"
+  }
+}
