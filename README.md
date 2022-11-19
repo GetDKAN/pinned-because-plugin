@@ -22,6 +22,8 @@ The `--because` clause is REQUIRED and ALWAYS WILL BE. :-)
 
 ## How?
 
+Install:
+
     composer require getdkan/pinned-because-plugin
 
 Then do the thing:
