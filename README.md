@@ -14,6 +14,22 @@ Given this command, the plugin will do two things:
    and require that within the project's `composer.json` file.
 2. Add the `--because` message to the `composer.json` file's `extra` section.
 
+```
+    "require": {
+        [...]
+        "composer/installers": "^1.9",
+        "getdkan/pinned-because-plugin": "9.4.x-dev",
+        "symfony/http-foundation": "v4.4.41"
+    },
+    [...]
+    "extra": {
+        [...]
+        "pinned-because": {
+            "symfony/http-foundation": "scary otherwise"
+        }
+    },
+```
+
 This plugin is not configurable. It does not have any other opinions. It only
 moves the locked version of the file to your project `composer.json` and
 documents why.
